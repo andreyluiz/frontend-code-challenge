@@ -1,5 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const postcssCssnext = require('postcss-cssnext');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.scss', '.css'],
+    extensions: ['.js', '.jsx', '.css'],
   },
   module: {
     rules: [
@@ -19,7 +21,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader'],
+        use: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:8]',
+          'postcss-loader'
+        ],
       },
     ],
   },
