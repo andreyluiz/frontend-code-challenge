@@ -1,0 +1,60 @@
+.info {
+  padding: 48px;
+}
+
+.body {
+  & p {
+    color: rgba(0, 0, 0, 0.38);
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  & h2 {
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.size {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  align-self: center;
+
+  & h2 {
+    margin: 0;
+  }
+}
+
+:root {
+  --size-col: {
+    flex: 1 1 auto;
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}
+
+.bedrooms {
+  @apply --size-col;
+  border-right: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+.metres {
+  @apply --size-col;
+}

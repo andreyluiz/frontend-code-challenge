@@ -8,25 +8,33 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
+    "test": "mocha",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-enzyme": "^1.0.0-beta.0",
     "css-loader": "^0.28.7",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^4.0.0",
     "html-webpack-plugin": "^2.28.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.5.1",
+    "mocha": "^4.0.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-loader": "^2.0.9",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5",
-    "@storybook/react": "^3.2.17",
-    "@storybook/addon-actions": "^3.2.17",
-    "@storybook/addon-links": "^3.2.17"
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "react": "^16.2.0",

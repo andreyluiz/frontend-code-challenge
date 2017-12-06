@@ -1,0 +1,4 @@
+ -w
+ test/dom.js
+ --require ignore-styles
+ src/**/*.spec.js
