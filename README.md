@@ -47,3 +47,12 @@ The programming challenge exists in 2 parts:
 * Usage of linters.
 * Git hooks.
 * Usage of Material Design concepts
+
+
+## Test result
+
+The following npm script are applicable:
+
+`start`: Starts the application in development mode;
+`test`: Run the tests;
+`storybook`: Run storybook for visual validation.
