@@ -49,10 +49,16 @@ The programming challenge exists in 2 parts:
 * Usage of Material Design concepts
 
 
-## Test result
+# Test result
 
+## Scripts
 The following npm script are applicable:
 
 `start`: Starts the application in development mode;
+
 `test`: Run the tests;
+
 `storybook`: Run storybook for visual validation.
+
+## Technologies
+I used React + Redux as superset and [CSS Next](http://cssnext.io/) as CSS pre-processor.
