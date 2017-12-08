@@ -14,12 +14,15 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+  margin-bottom: 12px;
+  width: 250px;
 
   & h2 {
     font-weight: 400;
     margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 

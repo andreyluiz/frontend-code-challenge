@@ -18,6 +18,7 @@
     "@storybook/react": "^3.2.17",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
@@ -37,7 +38,15 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-duck": "^1.0.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "whatwg-fetch": "^2.0.3"
   }
 }

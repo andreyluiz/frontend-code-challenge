@@ -4,7 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const postcssCssnext = require('postcss-cssnext');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    'babel-polyfill',
+    'whatwg-fetch',
+    './src/index.js',
+  ],
   output: {
     filename: './bundle.js',
     path: path.join(__dirname, 'dist'),
@@ -34,4 +38,13 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
+  devServer: {
+    proxy: {
+      '/v1': {
+        target: 'https://api.mcmakler.de',
+        secure: false,
+        changeOrigin: true,
+      },
+    },
+  },
 };
